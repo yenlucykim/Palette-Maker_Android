@@ -1,0 +1,209 @@
+<!-- res/layout/activity_color_contrast.xml -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="?attr/colorSurfaceContainerHigh"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ColorContrast">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="412dp"
+        android:layout_height="116dp"
+        android:background="?attr/colorPrimary"
+        android:theme="?attr/actionBarTheme" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="386dp"
+        android:layout_height="72dp"
+        android:layout_alignBottom="@+id/toolbar"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="18dp"
+        android:text="@string/color_contrast"
+        android:textAlignment="center"
+        android:textColor="?attr/colorOnPrimary"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        app:autoSizeTextType="none"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button17"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:contentDescription="@string/new_palette"
+        android:text="@string/back_tick"
+        android:textSize="28sp"
+        android:onClick="makePalette"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/previewText"
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:layout_below="@id/toolbar"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="55dp"
+        android:background="#2F1067"
+        android:text="@string/hello_world"
+        android:textAlignment="center"
+        android:textColor="#871111"
+        android:textSize="35sp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button0_p"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/inputText"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="156dp"
+        android:background="#871111"
+        android:contentDescription="@string/main_color_button"
+        android:text="@string/hex_main"
+        android:textColor="@color/white"
+        android:onClick="updateColorSelection"
+        app:layout_constraintHorizontal_bias="1.0" />
+
+    <EditText
+        android:id="@+id/inputText"
+        android:layout_width="151dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/contrastInfo"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:autofillHints="@string/contrast_text_hint"
+        android:text="@string/hello_world"
+        android:hint="@string/hello_world"
+        android:inputType="text"
+        android:textAlignment="center"
+        android:textSize="20sp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button2_p"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button5_p"
+        android:layout_alignEnd="@+id/button6_p"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="0dp"
+        android:background="#602525"
+        android:text="@string/hex_two"
+        android:textColor="@color/white"
+        android:onClick="updateColorSelection"
+        app:layout_constraintBottom_toTopOf="@+id/button5_p"
+        app:layout_constraintEnd_toStartOf="@+id/button3_p"
+        app:layout_constraintHorizontal_bias="0.052"
+        app:layout_constraintStart_toEndOf="@+id/button1_p"
+        app:layout_constraintTop_toBottomOf="@+id/inputText"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button4_p"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/button5_p"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="0dp"
+        android:layout_toStartOf="@+id/button5_p"
+        android:background="#3D2765"
+        android:text="@string/hex_four"
+        android:textColor="@color/white"
+        android:onClick="updateColorSelection"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button1_p"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/button3_p"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="0dp"
+        android:layout_toStartOf="@+id/button3_p"
+        android:textColor="@color/white"
+        android:onClick="updateColorSelection"
+        android:background="#781717"
+        android:text="@string/hex_one" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button3_p"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button6_p"
+        android:layout_alignEnd="@+id/button5_p"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="0dp"
+        android:background="#390A0A"
+        android:text="@string/hex_three"
+        android:textColor="@color/white"
+        android:onClick="updateColorSelection"
+        app:layout_constraintBottom_toTopOf="@+id/button6_p"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button2_p" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button5_p"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/button6_p"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="0dp"
+        android:layout_toStartOf="@+id/button6_p"
+        android:background="#604E81"
+        android:text="@string/hex_five"
+        android:textColor="@color/white"
+        android:onClick="updateColorSelection"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button6_p"
+        app:layout_constraintStart_toEndOf="@+id/button4_p" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button6_p"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="72dp"
+        android:layout_marginBottom="108dp"
+        android:background="#2F1067"
+        android:textColor="@color/white"
+        android:text="@string/hex_six"
+        android:onClick="updateColorSelection"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button5_p" />
+
+    <TextView
+        android:id="@+id/contrastInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/previewText"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="80dp"
+        android:padding="5dp"
+        android:text="@string/contrast_info"
+        android:textAlignment="center"
+        android:textSize="20sp" />
+
+</RelativeLayout>
