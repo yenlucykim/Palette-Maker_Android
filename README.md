@@ -10,5 +10,12 @@ Smart color palette generator with export compatibility for drawing applications
 * User testing
 
 # Final Product Demo
-https://drive.google.com/file/d/1V350-BZUdfmxSbE4p91T3zGSoJJOWdCR/view?usp=drive_link
-https://drive.google.com/file/d/1XKZzhItfuAAv4jx11tEThiD5TKas1rg9/view?usp=drive_link
+
+
+https://github.com/yenlucykim/Palette-Maker_Android/assets/148504289/14afab86-6016-437b-a6e0-70dd2874b08a
+
+
+
+https://github.com/yenlucykim/Palette-Maker_Android/assets/148504289/122d2691-263e-4190-a859-b8b224e9812d
+
+
