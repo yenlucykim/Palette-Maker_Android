@@ -8,3 +8,7 @@ Smart color palette generator with export compatibility for drawing applications
 * Usability Engineering Lifecycle
 * Building prototypes
 * User testing
+
+# Final Product Demo
+https://drive.google.com/file/d/1V350-BZUdfmxSbE4p91T3zGSoJJOWdCR/view?usp=drive_link
+https://drive.google.com/file/d/1XKZzhItfuAAv4jx11tEThiD5TKas1rg9/view?usp=drive_link
